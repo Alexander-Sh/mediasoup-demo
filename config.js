@@ -36,9 +36,9 @@ module.exports =
 		rtcMinPort       : 40000,
 		rtcMaxPort       : 49999,
         // mediasoup spartial value for VP9
-        minSpartial : 0,
+        minSpartial : 1,
         // mediasoup temporial value for VP9
-        minTemporial : 0,
+        minTemporial : 2,
 		// mediasoup Room settings.
 		roomCodecs :
 		[
