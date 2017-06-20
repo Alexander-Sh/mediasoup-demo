@@ -11,6 +11,8 @@ process.env.DEBUG = config.debug || '*LOG* *WARN* *ERROR*';
 console.log('- process.env.DEBUG:', process.env.DEBUG);
 console.log('- config.mediasoup.logLevel:', config.mediasoup.logLevel);
 console.log('- config.mediasoup.logTags:', config.mediasoup.logTags);
+console.log('- config.mediasoup.minSpartial:', config.mediasoup.minSpartial);
+console.log('- config.mediasoup.minTemporial:', config.mediasoup.minTemporial);
 
 const fs = require('fs');
 const https = require('https');
@@ -37,7 +39,9 @@ let mediaServer = mediasoup.Server(
 		rtcAnnouncedIPv4 : config.mediasoup.rtcAnnouncedIPv4,
 		rtcAnnouncedIPv6 : config.mediasoup.rtcAnnouncedIPv6,
 		rtcMinPort       : config.mediasoup.rtcMinPort,
-		rtcMaxPort       : config.mediasoup.rtcMaxPort
+		rtcMaxPort       : config.mediasoup.rtcMaxPort,
+        vp9MinSpartial   : config.mediasoup.minSpartial,
+        vp9MinTemporial  : config.mediasoup.minTemporial
 	});
 
 global.SERVER = mediaServer;
