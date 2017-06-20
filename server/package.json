@@ -10,7 +10,7 @@
     "colors": "^1.1.2",
     "debug": "^2.6.4",
     "express": "^4.15.2",
-    "mediasoup": "^1.2.3",
+    "mediasoup": "https://github.com/nat-mobile/mediasoup.git",
     "protoo-server": "https://s3.eu-central-1.amazonaws.com/alex.sh/protoo.server.tar.gz"
   },
   "devDependencies": {
