@@ -1,7 +1,7 @@
 module.exports =
 {
 	// DEBUG env variable For the NPM debug module.
-	debug  : '*DEBUG* *LOG* *WARN* *ERROR* *mediasoup-worker* *mediasoup*',
+	debug  : '*DEBUG* *LOG* *WARN* *ERROR* *mediasoup-worker*', // *mediasoup*
 	// Listening hostname for `gulp live|open`.
 	domain : 'localhost',
 	tls    :
@@ -20,14 +20,14 @@ module.exports =
 		logLevel : 'debug',
 		logTags :
 		[
-			'info',
-            'ice',
-            'dlts',
-			'rtp',
-			'srtp',
-			'rtcp',
-			'rbe',
-			'rtx'
+			'info'
+            //'ice',
+            //'dlts',
+			//'rtp',
+			//'srtp',
+			//'rtcp',
+			//'rbe',
+			//'rtx'
 		],
 		rtcIPv4          : true,
 		rtcIPv6          : true,
@@ -39,6 +39,8 @@ module.exports =
         minSpartial : 1,
         // mediasoup temporial value for VP9
         minTemporial : 2,
+        // active speaker enable
+        needToFilterAudioLevels : true,
 		// mediasoup Room settings.
 		roomCodecs :
 		[

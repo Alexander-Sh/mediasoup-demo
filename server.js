@@ -13,6 +13,7 @@ console.log('- config.mediasoup.logLevel:', config.mediasoup.logLevel);
 console.log('- config.mediasoup.logTags:', config.mediasoup.logTags);
 console.log('- config.mediasoup.minSpartial:', config.mediasoup.minSpartial);
 console.log('- config.mediasoup.minTemporial:', config.mediasoup.minTemporial);
+console.log('- config.mediasoup.needToFilterAudioLevels:', config.mediasoup.needToFilterAudioLevels);
 
 const fs = require('fs');
 const https = require('https');
@@ -41,7 +42,8 @@ let mediaServer = mediasoup.Server(
 		rtcMinPort       : config.mediasoup.rtcMinPort,
 		rtcMaxPort       : config.mediasoup.rtcMaxPort,
         vp9MinSpartial   : config.mediasoup.minSpartial,
-        vp9MinTemporial  : config.mediasoup.minTemporial
+        vp9MinTemporial  : config.mediasoup.minTemporial,
+        needToFilterAudioLevels : config.mediasoup.needToFilterAudioLevels
 	});
 
 global.SERVER = mediaServer;
