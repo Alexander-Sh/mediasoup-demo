@@ -6,7 +6,7 @@
 * Clone the project:
 
 ```bash
-$ git clone https://github.com/nat-mobile/mediasoup-demo
+$ git clone https://github.com/Alexander-Sh/mediasoup-demo
 $ cd mediasoup-demo
 ```
 

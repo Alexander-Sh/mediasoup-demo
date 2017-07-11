@@ -11,7 +11,7 @@
     "debug": "^2.6.4",
     "express": "^4.15.2",
     "mediasoup": "https://github.com/nat-mobile/mediasoup.git",
-    "protoo-server": "https://s3.eu-central-1.amazonaws.com/alex.sh/protoo.server.tar.gz"
+    "protoo-server": "https://github.com/Alexander-Sh/protoo-server.git#master"
   },
   "devDependencies": {
     "babel-plugin-transform-object-assign": "^6.22.0",
