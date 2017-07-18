@@ -40,7 +40,7 @@ module.exports =
         // mediasoup temporial value for VP9
         minTemporial : 2,
         // active speaker enable
-        needToFilterAudioLevels : true,
+        needToFilterAudioLevels : false,
 		// mediasoup Room settings.
 		roomCodecs :
 		[
@@ -57,6 +57,11 @@ module.exports =
 			{
 				kind       : 'video',
 				name       : 'video/vp9',
+				clockRate  : 90000
+			},
+			{
+				kind       : 'video',
+				name       : 'video/vp8',
 				clockRate  : 90000
 			}
 		],
