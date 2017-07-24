@@ -3,10 +3,12 @@
 
 ## Installation
 
+* Install NodeJS 6 LTS
+
 * Clone the project:
 
 ```bash
-$ git clone https://github.com/Alexander-Sh/mediasoup-demo
+$ git clone https://github.com/Alexander-Sh/mediasoup-demo-server.git
 $ cd mediasoup-demo
 ```
 
@@ -17,21 +19,11 @@ $ npm install
 ```
 
 
-```
-
-* Globally install `gulp-cli` NPM module (may need `sudo`):
-
-```bash
-$ npm install -g gulp-cli
-```
-
-
 ## Run it locally
 
 * Run the Node.js server application in a terminal:
 
 ```bash
-$ cd server
 $ node server.js
 ```
 
